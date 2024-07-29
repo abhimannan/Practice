@@ -1,0 +1,9 @@
+body{
+background-color: black;
+color:antiquewhite;
+}
+h1{
+background-color:darkred;
+display: inline-block;
+text-decoration: none;
+}
