@@ -1,0 +1,10 @@
+body{
+background-color: yellow;
+background-image: radial-gradient(red,rgb(133, 229, 133),yellow);
+
+}
+#ex{
+background-color: aqua;
+
+
+}

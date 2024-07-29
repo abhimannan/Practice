@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+<script>
+//syntax:
+
+ /*
+     let variable={
+             key:value,
+                  .
+                  .
+             method:function here,
+
+     };
+ */
+
+    let persondata={
+    firstname:"abhi",
+    lastname:"mannan",
+    age:19,
+    working:false,
+    student:false,
+    eat:function(){
+     console.log(`${this.name} is eating`);
+    }
+
+
+
+    };
+
+
+console.log(`your name is ${persondata.firstname+" "+persondata.lastname}`);
+console.log(persondata.age);
+console.log(persondata.working);
+console.log(persondata.student);
+persondata.eat();
+
+
+
+
+ </script>
+</body>
+</html>

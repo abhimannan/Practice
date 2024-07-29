@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>USER INPUT</title>
+<link rel="stylesheet" href="userinput.css">
+<script src="username.js"></script>
+</head>
+<body>
+ <h1 id="display"></h1>
+ <label id="displayname">User Name</label>
+<input type="text" id="entername">
+ <button id="namebtn">Submit Name</button><br>
+ <label id="displaymothername">Mother Name</label>
+<input type="text" id="mothername">
+ <button id="namebtn" onclick="motherbtn()">Submit Mother Name</button><br> 
+ <h1 id="displayfathername">Father Name</h1>
+ <input type="text" id="enterfathername"> 
+ <button id="namebtn" onclick="fatherfunction()">Submit Father Name </button>
+ <h1 id="brothername">Brother Name</h1>
+<input type="text" id="enterbroname"> 
+ <button id="brothetbtn" onclick="brofunction()">Submit Brother Name</button><br>
+
+ <button id="chnagecolor" onclick="changebtncolor()">Submit Details</button>
+ <script>
+  
+  function changebtncolor(){
+   var changecolor=document.getElementById("chnagecolor");
+changecolor.style.backgroundColor="green";
+}
+  let username=windw.prompt("enter the name:");
+document.getElementById("display").textContent=`The User Name is :${username}`;
+let myname=document.getElementById("myname");
+document.getElementById("namebtn").onclick=
+function namedisplay(){
+let getname=document.getElementById("entername").value;
+document.getElementById("displayname").textContent=getname;
+}
+namedisplay();
+function motherbtn(){
+var getmname=document.getElementById("mothername").value;
+document.getElementById("displaymothername").textContent=getmname;
+}
+function fatherfunction(){
+var getfname=document.getElementById("enterfathername").value;
+document.getElementById("displayfathername").textContent=getfname;
+}
+function brofunction(){
+var getbname=document.getElementById("enterbroname").value;
+document.getElementById("brothername").textContent=getbname;
+}
+
+
+
+ </script>
+</body>
+</html>

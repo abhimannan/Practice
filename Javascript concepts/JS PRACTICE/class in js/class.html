@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+class product_template{
+constructor(name,price,color){
+ this.name=name;
+ this.price=price;
+ this.color=color;
+}
+
+display_p_details(){
+ console.log(`name:${this.name}  price:${this.price}  color:${this.color}`);
+}
+
+
+
+
+}
+//object creation:
+let product1=new product_template("shirt",5000,"blue");
+
+
+product1.display_p_details();
+
+
+
+
+
+
+ </script>
+</body>
+</html>

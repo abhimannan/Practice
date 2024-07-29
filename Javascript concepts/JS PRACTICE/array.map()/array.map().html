@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+//array.map();
+
+/*
+let numbers=[1,2,3,4,5];
+console.log(numbers);
+
+let s=numbers.map(square);
+console.log(s);
+function square(elements){
+ return Math.pow(elements,2);
+}
+
+//cube the values:
+let c=numbers.map(cubes);
+console.log(c);
+function cubes(elements){
+return Math.pow(elements,3);
+}
+
+//display:
+let d=c.forEach(display);
+console.log(d);
+function display(elements){
+ console.log(elements);
+}
+//another way to display==> for of mathod:
+for(let cubes of c){
+ console.log(cubes);
+}
+console.log("---------------");
+//...spread parameter;
+console.log(...c);*/
+
+let names=["geetha","kumar","vijay","abhi"];
+
+let x=names.map(display);
+console.log(x);
+function display(element){
+ return element.toUpperCase();
+}
+
+names.forEach(display);
+
+function display(element){
+ console.log(element.charAt(0).toUpperCase()+element.slice(1));
+}
+
+
+
+
+
+
+
+ </script>
+ 
+</body>
+</html>

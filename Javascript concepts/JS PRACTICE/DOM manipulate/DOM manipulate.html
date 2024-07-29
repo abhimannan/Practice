@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h3 id="family">family</h3>
+ <ul id="familypar">
+<li id="kumar">kumar</li>
+<li>geetha</li>
+<li>vijay</li>
+<li id="abhi">abhi</li>
+ </ul>
+ <h3 id="fruits">fruits</h3>
+ <ul id="frtpar" >
+<li>apple</li>
+<li>orange</li>
+<li>banana</li>
+<li>grapes</li>
+ </ul>
+<script>
+ /*
+tOPICS:
+1.DOM manipulation;
+2.create an HTML tags using javascript;
+
+ */
+ //select the parent
+let get=document.getElementById("familypar");
+//create an element
+let create=document.createElement("li");
+//with in the element add content you want to display
+create.textContent="my wife";
+//finally append the created element into the parent as a children
+get.append(create);
+
+let h2elementcreate=document.createElement("h2");
+h2elementcreate.textContent="Brother's Wife";
+get.append(h2elementcreate);
+
+
+
+
+
+//Note:
+/*
+.firstElementChild
+.lastElementChild
+.nextElementChild
+.previousElementchild
+.parentElement
+.children
+*/
+/*let family=document.getElementById("familypar");
+let x=family.lastElementChild;
+x.style.backgroundColor="red";
+
+let family1=document.getElementById("familypar");
+let y=family1.firstElementChild;
+y.style.backgroundColor="lightgreen";
+
+let next=document.getElementById("kumar");
+let c=next.nextElementSibling;
+c.style.color="red";
+
+let pre=document.getElementById("abhi");
+let previous=pre.previousElementSibling;
+let parent=pre.parentElement;
+parent.style.borderStyle="dashed";
+previous.style.fontSize="30px";
+
+let frts=document.getElementById("frtpar");
+let child=frts.children;
+console.log(child);
+*/
+
+
+
+</script>
+</body>
+</html>

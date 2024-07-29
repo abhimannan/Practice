@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+/*let numbers=[1,2,3,4,5];
+//console.log(numbers);
+//console.log(...numbers);
+numbers.forEach(display);
+
+function display(elements){
+ console.log(Math.sqrt(elements));
+}
+
+function double(elements,index,array){
+ array[index]=elements*2;
+}*/
+let fruits=["mango","orange","banana"];
+console.log(fruits);
+console.log(...fruits);
+for(let fruit of fruits){
+ console.log(fruit);
+}
+console.log("-----------------");
+fruits.forEach(display);
+function display(elements){
+ console.log(elements.charAt(0).toUpperCase()+elements.slice(1));
+}
+console.log("--------------");
+
+//display fruits
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+</body>
+</html>

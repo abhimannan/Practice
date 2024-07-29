@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="generaternum.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Number Generator</title>
+</head>
+<body>
+ <div id="container"></div>
+<button id="generator" onclick="generate()">GENERATE</button><br>
+<h1 id="diceroll1"></h1><br>
+<h1 id="diceroll2"></h1><br>
+<h1 id="diceroll3"></h1>
+</div>
+
+<script>
+function generate(){
+var dice1=Math.floor(Math.random()*6+1);
+var dice2=Math.floor(Math.random()*6+1);
+var dice3=Math.floor(Math.random()*6+1);
+document.getElementById("diceroll1").textContent=dice1;
+document.getElementById("diceroll2").textContent=dice2;
+document.getElementById("diceroll3").textContent=dice3;
+}
+
+
+
+</script>
+</body>
+</html>

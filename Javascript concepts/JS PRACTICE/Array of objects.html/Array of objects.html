@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+//class of fruits;
+/*class fruit{
+constructor(name,color,calories){
+ this.name=name;
+ this.color=color;
+ this.calories=calories;
+}
+}*/
+
+/*let fruit1=new fruit("apple","red",150);
+let fruit2=new fruit("orange","orange",100);
+let fruit3=new fruit("grapes","violet",55);*/
+
+//array of objects;
+let fruits=[
+{name:"apple",color:"green",calories:120},
+{name:"orange",color:"orange",calories:85},
+{name:"banana",color:"yellow",calories:50},
+{name:"graps",color:"violet",calories:90},
+{name:"coconut",color:"white",calories:20},
+
+];
+
+let x=fruits.reduce((pre,next)=>pre+next);
+console.log(x);
+
+
+
+
+
+
+
+
+
+ </script>
+</body>
+</html>

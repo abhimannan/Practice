@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+let date=new Date();
+console.log(date);
+let fullyear=date.getFullYear();
+let month=date.getMonth();
+let dateoftoday=date.getDate();
+let day=date.getDay();
+let hours=date.getHours();
+let minutes=date.getMinutes();
+let seconds=date.getSeconds();
+let milliseconds=date.getMilliseconds();
+
+//console.log(milliseconds);
+
+let setyear=date.setFullYear(2026);
+let setmonth=date.setHours(11);
+
+//console.log(setmonth);
+
+//closures: private protection;
+
+function outer(){
+let message="hello";
+function inner(){
+ console.log(message);
+}
+inner();
+}
+//function calling;
+outer();
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="checked.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <div id="container">
+ <input type="checkbox" id="mycheckbox">
+ <label for="mycheckbox">Subscribe</label><br><br>
+
+<input type="radio" id="phonepay" name="radio">
+<label for="phonepay">PhonePay</label><br>
+
+<input type="radio" id="Paytm" name="radio">
+<label for="paytm">Paytm</label><br>
+
+<input type="radio" id="gpay" name="radio">
+<label for="gpay">GPay</label><br><br>
+
+<input onclick="submit()" type="button" value="Sumbit" id="button">
+
+<h1 id="subscriberesult"></h1>
+<h1 id="paymentresult"></h1>
+</div>
+<script>
+
+function submit(){
+var subscripe=document.getElementById("mycheckbox").checked;
+if(subscripe){
+ document.getElementById("subscriberesult").textContent="your subscribed";
+}
+else{
+ document.getElementById("subscriberesult").textContent="your not subscribed";
+}
+
+var getpayment=document.getElementById("phonepay").checked;
+if(getpayment){
+ document.getElementById("paymentresult").textContent="you can pay using Phonepay";
+}
+var getPaytm=document.getElementById("Paytm");
+if(getPaytm.checked){
+ document.getElementById("paymentresult").textContent="you can pay using Paytm";
+}
+var getgpay=document.getElementById("gpay").checked;
+if(getgpay){
+ document.getElementById("paymentresult").textContent="you can pay using gpay";
+}
+else{
+ document.getElementById("paymentresult").textContent="you have to select any payment method";
+}
+
+
+
+}
+let age=21;
+age<=30?console.log("he is adult"):console.log("he is uncle");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

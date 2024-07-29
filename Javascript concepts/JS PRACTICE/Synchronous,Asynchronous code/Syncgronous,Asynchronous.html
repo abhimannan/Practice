@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+ function fun1(){
+   console.log("task 1");
+  }
+  function fun2(callback){
+   setTimeout((callback)=>{console.log("task 2");
+console.log("task 3");
+console.log("task 4");
+callback()
+
+},3000);
+}
+fun2(fun1);
+
+//error handling;
+/*
+try{
+let x=window.prompt("enter your age");
+
+if(isNaN(x)){
+ throw "enter the valid details";
+}
+else{
+ console.log(x);
+}
+}
+catch(error){
+ console.log(error);
+}
+
+console.log("END")
+*/
+
+
+
+
+
+ </script>
+</body>
+</html>

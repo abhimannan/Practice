@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+
+//this:"this" keyword is used to refers to the object properties
+
+let student={
+name:"geetha",
+lastname:"kumar",
+gender:"female",
+age:35,
+married:function(){
+ console.log(`${this.name} is married`);
+}
+
+
+
+}
+student.married();
+console.log(student.name);
+console.log(student.lastname);
+console.log(student.gender);
+
+console.log(student.age);
+
+
+
+
+
+
+
+
+
+
+ </script>
+</body>
+</html>

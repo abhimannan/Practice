@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="circumference.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Mini Project</title>
+</head>
+<body>
+ <div class="container">
+ <h1 class="x">Enter The Radius Of The Circle:</h1>
+<label class="x">Radius</label>
+ <input id="radius" type="text" name="radiusbox"><br><br>
+<button onclick="operation()" id="result">Find Circumference</button>
+<h1 id="displayresult"></h1>
+</div>
+
+<script>
+function
+ operation(){
+var radius=document.getElementById("radius").value;
+radius=Number(radius);
+var circumference=2*3.14159*radius;
+document.getElementById("displayresult").textContent=circumference+`cm`;
+
+}
+
+
+
+
+</script>
+</body>
+</html>

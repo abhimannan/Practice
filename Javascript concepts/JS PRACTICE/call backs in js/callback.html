@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+//callback in javascript:passing function as a parameter
+/*
+fun1(fun2,fun3);
+function fun1(callback1,callback2){
+ console.log("this is function1");
+ callback1();
+ callback2();
+}
+function fun2(){
+ console.log("this is function2");
+}
+function fun3(){
+ console.log("this is function3");
+}
+*/
+
+function add(a,b,callback){
+ let result=a+b;
+ console.log(result);
+ callback(result);
+}
+function sub(a,b){
+ let result=a-b;
+ console.log(result);
+}
+
+add(2,2,sub);
+
+
+
+
+
+
+
+
+
+
+ </script>
+</body>
+</html>

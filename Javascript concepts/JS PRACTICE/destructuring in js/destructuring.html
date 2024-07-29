@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+//descturing :to obtain the values in the arrays/onjects:
+//[]=for arrays
+//{}=fo objects
+
+
+//  1.to swap 2 numbers:
+/*let a=10;
+let b=20;
+console.log(`Before swaping a,b values:${a} ${b}`);
+[a,b]=[b,a];
+console.log(`After swaping a,b values:${a} ${b}`);
+*/
+
+//   2.Swap 2 elements in a array:
+let names=["geetha","kumar","vijay","abhi"];
+console.log(names);
+const [mother,father,brother,me]=names;
+console.log(mother);
+console.log(father);
+console.log(brother);
+console.log(me);
+console.log(names);
+//swaping geetha--->kumar;
+let swap=[names[0],names[1]]=[names[1],names[0]]
+console.log(names);
+
+//Extracting array properties of the objects;
+let person1={
+firstname:"kumar",
+lastname:"gulli",
+age:19,
+job:"fullstack web developer",
+}
+
+let person2={
+firstname:"geetha",
+lastname:"angel",
+age:30,
+}
+
+//const {firstname,lastname,age,job}=person1;
+/*console.log(firstname+" "+lastname);
+console.log(age+" "+job);*/
+
+/*const {firstname,lastname,age,job="software developer"}=person2;
+console.log(firstname+" "+lastname);
+console.log(age+" "+job);*/
+
+function display(firstname,lastname,age,job="software developer"){//error is here;
+console.log(`firstname ${person2 .firstname}`);
+console.log(`lastname ${person2.lastname}`);
+console.log(`age ${person2.age}`);
+console.log(`job ${person2.job}`);
+}
+
+//function call;
+display(person2);
+
+
+
+
+
+ </script>
+</body>
+</html>

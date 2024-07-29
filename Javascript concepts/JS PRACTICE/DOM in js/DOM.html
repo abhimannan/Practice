@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=\, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+<h1 id="idselector">idselector</h1>
+<div class="fruits">Apple</div>
+<div class="fruits">Banana</div>
+<div class="fruits">orage</div>
+
+<h3>MY FAMILY</h3>
+<ul>
+<li>kumar</li>
+<li>geetha</li>
+<li>vijay</li>
+ <li>abhi</li>
+</ul>
+<h3>GOALS</h3>
+<ul>
+<li>software developer</li>
+<li>good salary</li>
+<li>ktm</li>
+ <li>mom,dad(NO Work)/li>
+</ul>
+ <script>
+  //document.getElementById
+let x=document.getElementById("idselector");
+x.style.backgroundColor="green";
+//document.getElementsByClassName
+let y=document.getElementsByClassName("fruits");
+y[0].style.backgroundColor="green";
+for(let fruit of y){
+ fruit.style.backgroundColor="red";
+}
+//document.getElementsByTagName
+let h4elments=document.getElementsByTagName("h3");
+for(let x of h4elments){
+ x.style.color="blue";
+}
+let liitems=document.getElementsByTagName("li");
+for(let li of liitems){
+ li.style.backgroundColor="red";
+ li.style.color="white";
+}
+//document.querySelector;
+let family=document.querySelector("h3");
+family.style.backgroundColor="orange"; 
+let litms=document.querySelectorAll("li");
+litms[7].style.backgroundColor="black";
+litms[7].style.color="orange";
+let frts=document.querySelectorAll(".fruits");
+frts[0].style.backgroundColor="black";
+ </script>
+</body>
+</html>

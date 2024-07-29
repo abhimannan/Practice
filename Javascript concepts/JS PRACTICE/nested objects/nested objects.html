@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <script>
+//nested objects: objects with in the objects is called as "nested objects";
+const person1={
+firstname:"abhi",
+lastname:"mannan",
+age:30,
+
+//nested object;
+address:{
+doornum:120,
+village:"ABR",
+city:"kuppam",
+},
+contactdetails:{
+name:"abhi",
+service:"jio",
+phonenum:7989065214,
+
+
+}
+
+
+
+
+}
+console.log(person1.firstname);
+console.log(person1.lastname);
+console.log(person1.age);
+console.log(person1.address.doornum);
+console.log(person1.address.village);
+console.log(person1.address.city);
+console.log(person1.contactdetails);
+
+for(const property in person1.address){
+ console.log(person1.address[property]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+</body>
+</html>

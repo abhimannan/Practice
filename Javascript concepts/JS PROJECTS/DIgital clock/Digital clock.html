@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="Digital clock.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Digital clock</title>
+</head>
+<body>
+ <div id="container">
+
+<div id="clock">00:00:00</div>
+
+ </div>
+<script>
+function update(){
+let nowtime=new Date();
+let hours=nowtime.getHours().toString().padStart(2,0);
+let ampm=hours>=12?"Pm":"Am";
+hours=hours % 12 ||12;
+let minutes=nowtime.getMinutes().toString().padStart(2,0);
+let seconds=nowtime.getSeconds().toString().padStart(2,0);
+let timedisplay=`${hours}:${minutes}:${seconds} ${ampm}`;
+document.getElementById("clock").textContent=timedisplay;
+
+
+}
+
+
+
+update();
+setInterval(update);
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
