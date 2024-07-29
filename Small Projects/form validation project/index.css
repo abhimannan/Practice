@@ -1,0 +1,78 @@
+ * {
+  box-sizing: border-box
+ }
+
+ body {
+  background-color: lime;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: CENTER;
+  HEIGHT: 100vh;
+  margin: 0;
+ }
+
+ #abhi {
+  display: inline-block;
+  border-style: inherit;
+  border-radius: 10px;
+ }
+
+ .container {
+  background-color: antiquewhite;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 450px;
+  border-style: groove;
+  border-color: rgb(6, 230, 226);
+  border-width: 7px;
+ }
+
+ .header {
+  text-align: center;
+  background-color: rgb(245, 53, 187);
+  padding: 20px 40px;
+ }
+
+ .header h2 {
+  text-align: center;
+
+ }
+
+ .form {
+  background-color: aqua;
+  padding: 30px;
+ }
+
+ .form-control {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+ }
+
+ .form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+ }
+
+ .form-control input {
+  border-style: solid;
+  border-radius: 12.5px;
+  border-color: rgb(235, 10, 138);
+  display: block;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+ }
+
+ #button {
+  display: inline-block;
+  border-style: geoove;
+  width: 160px;
+  height: 30px;
+  border-width: 4px;
+  border-color: rgb(49, 9, 232);
+  border-radius: 10px;
+  background-color: red;
+
+
+ }

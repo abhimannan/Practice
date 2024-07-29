@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+<head>
+ <title>LOVE CALCULATOR</title>
+<link rel="stylesheet" href="lovecalculator.css">
+<script src="lovecalculator.js"></script>
+</head>
+</html>
+<body>
+<div id="contentbox">
+<h1>LOVE CALCULATOR...</h1>
+<p>enter your name and your crush name to see the chance of your relationship workout</p>
+<br>
+<label for="name">YOUR NAME:</label>
+<input id="yourname" type="text" name="name"><br><br>
+<label for="name">YOUR CRUSH NAME:</label>
+<input id="crushname" type="text" name="name"><br><br>
+<input id="button" type="button" name="button" value="CALCULATE">
+<H2 ID="result"></H2>
+<p id="resultpercent"></p>
+</div>
+
+<script>
+document.getElementById("button").onclick=function(){
+let yourname=document.getElementById("yourname").value;
+let crushname=document.getElementById("crushname").value;
+if(yourname!="" && crushname!=""){
+ let percentage=Math.floor(Math.random()*101);
+ document.getElementById("result").innerHTML=`${yourname} and ${crushname} chance of love...`;
+ document.getElementById("resultpercent").innerHTML=percentage.toString()+"%";
+}
+}
+</script>
+
+
+
+</body>

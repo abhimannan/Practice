@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="counter.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Counter </title>
+</head>
+<body>
+ <div class="container">
+  <h1 id="counter">Conter</h1>
+<div class="display">
+<h1 id="abhi">0</h1>
+</div>
+<div class="btns">
+<button id="db" class="sameclass" onclick="decreasevalue()">Decrease</button>
+<button id="rb" class="sameclass" onclick="resetvalue()">Reset</button>
+<button id="ib" class="sameclass" onclick="increasevalue()">Increase</button>
+</div>
+</div>
+<script>
+var count=0;
+function decreasevalue(){
+count=count-1;
+document.getElementById("abhi").textContent=count;
+let x=document.getElementById("db");
+x.style.backgroundColor="black";
+}
+function resetvalue(){
+count=0;
+document.getElementById("abhi").textContent=count;
+let y=document.getElementById("rb");
+y.style.backgroundColor="black";
+}
+function increasevalue(){
+count=count+1;
+document.getElementById("abhi").textContent=count;
+let z=document.getElementById("ib");
+z.style.backgroundColor="black";
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

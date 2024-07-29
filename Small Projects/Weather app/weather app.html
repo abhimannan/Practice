@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="weather app.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Weather App</title>
+</head>
+<body>
+<div id="container">
+<div id="heading">
+ <h1 id="head">Weather App</h1>
+</div>
+
+<div id="searchspace">
+<input id="inputbox" placeholder="Enter Location" type="text" name="location">
+<button id="get">Get</button>
+</div>
+
+<div id="image">
+ <img src="C:\Users\SNEHA\Desktop\photoes\png-clipart-iphone-computer-icons-weather-app-electronics-cloud.png" alt="Weather Image" width="125px" height="125px">
+</div>
+
+<div id="display">
+<h1 id="temp">0<span>&#176</span>c</h1>
+<h1 id="description">sunny</h1>
+<h1 id="location">chennai</h1>
+
+</div>
+
+</div> 
+<script>
+let inputboxx=document.querySelector("#inputbox");
+let getbtn=document.getElementById("get");
+let tempp=document.getElementById("temp");
+let descriptionn=document.getElementById("description");
+let locationn=document.getElementById("location");
+const apikey='717cb702432f76152f6501e5e1a8b0f8';
+
+getbtn.onclick=function(){
+if(inputboxx.value==""){//input is null or not
+ alert("Enter The Location");
+}
+else{
+ let loc=inputboxx.value;
+ let url=`https://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=${apikey}`;
+fetch(url).then(res=>res.json())
+.then(data=>{
+console.log(data);
+const{name}=data;
+const{feels_like}=data.main;
+const{temp}=data.main
+const{description}=data.weather[0];
+tempp.textContent=Math.floor(temp-273);
+locationn.textContent=name;
+descriptionn.textContent=description;
+})
+.catch(()=>{alert("ENTER THE VALID LOCATION");})
+inputboxx.value="";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

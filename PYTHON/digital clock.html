@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DIGITAL CLOCK</title>
+<link rel="stylesheet" href="digital clock.css">
+<!--<script src="jscode.js"></script>-->
+</head>
+<body>
+ <h1 id="h1">DIGITAL CLOCK</h1>
+ <DIV id="div">
+  <div>
+<span id="hours" >00</span>
+<span CLASS="text">HOURS</span>
+  </div>
+  <div>
+   <span id="minutes" >00</span>
+   <span CLASS="text">MINUTES</span>
+     </div>
+     <div>
+      <span id="seconds">00</span>
+      <span CLASS="text">SECONDS</span>
+        </div>
+        <div>
+         <span id="ampm">AM</span>
+        
+           </div>
+ </DIV>
+
+
+
+<script>
+const hoursel=getElementById("hours");
+const minutesel=getElementById("minutes");
+const secondsel=getElementById("seconds");
+const ampmel=getElementById("ampm");
+
+function updateclock(){
+let h=new Date().getHours();
+let m=new Date().getMinutes();
+let s=new Date().getSeconds();
+let ampm="AM";
+
+if(h>12){
+h=h-12;
+ampm="PM";
+}
+hoursel.innerText=h;
+minutesel.innerText=m;
+secondsel.innerText=s;
+ampmel,(innerText=ampm);
+}
+updateclock();
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
